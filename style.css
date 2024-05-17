@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  h2{
+    margin-bottom: 5px;
+  }
+  .body {
+    width: 27.4375em;
+    margin: 20px auto;
+    height:27rem;
+    background: #cdcdcd;
+    padding:10px;
+    border: 4px solid #F5F5F5;
+    border-radius: 15px;
+  }
+  
+  .body .textView{
+      width: 24.95rem;
+      height:2.4em;
+      margin-left: -3px;
+      background-color: #F5F5F5;
+      border-radius:10px;
+      text-align-last: right;
+      word-break: keep-all;
+      padding: 0.74em;
+      font-size:1.7rem;
+      font-family: "Tahoma", sans-serif;
+      
+  }
+  .button-groups{
+   margin: 13px 16px 0 16px;
+  
+  }
+  .btn{
+    width: 92px;
+    height: 53px;
+    padding: 10px 35px;
+    margin-right:5px;
+    border: 3px solid #707070;
+    border-radius: 10px;
+    text-align:center;
+    font-size: 15px;
+    font-family: 'HP Simplified', sans-serif;
+    font-weight: bold;
+  }
+  .btn:hover{
+   animation-name: hover;
+   animation-direction: alternate;
+   animation-duration: 0.3s;
+   animation-fill-mode: forwards;
+  }
+  @keyframes hover{
+    0%{border:3px solid #707070;}
+    100%{border: 4px solid #707070;}
+  }
+  .btn:focus{
+    border: 4px solid #707070;
+  }
+  
+  .btn:active{
+    box-shadow:1px 1px 1px 1px #333;
+  }
+  
+  @media(max-width:528px){
+    .body{
+      width: 24.4375em;
+      height:26rem;
+    }
+    .body .textView{
+      width: 21.95rem;
+    }
+    .btn{
+      width: 72px;
+      height:53px;
+      margin-left:5px;
+      padding:0;
+    }
+  }
+  @media(max-width:464px){
+    .body{
+      width: 18.4375em;
+      height:19rem;
+    }
+    .body .textView{
+      width: 15.95rem;
+    }
+    .btn{
+      width: 42px;
+      height:28px;
+      margin-left:14px;
+      padding:0;
+    }
+  }
